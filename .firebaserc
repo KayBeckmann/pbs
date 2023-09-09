@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "personal-bilance": {
+      "hosting": {
+        "pbs": [
+          "personal-bilance"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "personal-bilance"
+  }
+}
