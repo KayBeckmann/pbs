@@ -1,0 +1,41 @@
+mat-card-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+mat-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100dvw;
+  height: 100dvh;
+  background-color: rgba(63, 81, 181, 0.3);
+}
+
+.card {
+  max-width: 400px;
+}
+
+.alert {
+  color: red;
+}
+
+.hide {
+  display: none;
+}
+
+.full-width {
+  width: 100%;
+}
