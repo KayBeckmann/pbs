@@ -6,6 +6,17 @@
     </mat-card-header>
     <mat-card-content>
       <mat-form-field appearance="outline" class="half-width">
+        <mat-label>Username</mat-label>
+        <input
+          name="username"
+          required="true"
+          type="text"
+          matInput
+          placeholder="Username"
+        />
+        <mat-hint class="alert hide">Field is required!</mat-hint>
+      </mat-form-field>
+      <mat-form-field appearance="outline" class="half-width">
         <mat-label>E-Mail</mat-label>
         <input
           name="email"
@@ -40,9 +51,7 @@
       </mat-form-field>
     </mat-card-content>
     <mat-card-actions>
-      <button mat-raised-button color="primary" routerLink="dashboard">
-        SIGNUP
-      </button>
+      <button mat-raised-button color="primary" routerLink="/">SIGNUP</button>
       <button mat-raised-button routerLink="">LOGIN</button>
     </mat-card-actions>
   </mat-card>
