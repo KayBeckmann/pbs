@@ -18,6 +18,7 @@ mat-toolbar-row {
   display: grid;
   grid-template-columns: 1fr;
   align-items: center;
+  overflow-x: hidden;
 
   .img-container {
     margin-top: 10px;
@@ -48,13 +49,37 @@ mat-toolbar-row {
       padding-right: 25px;
       padding-top: 15px;
       padding-bottom: 15px;
-      width: 100%;
+      width: auto;
       cursor: pointer;
       font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
 
       &:hover {
-        background-color: purple;
+        background-color: var(--bg-color-main);
       }
+    }
+  }
+
+  .bottom {
+    position: absolute;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    bottom: 15px;
+    width: 100%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+
+    &:hover {
+      background-color: var(--hover-color);
+    }
+
+    .item {
+      font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
+      display: flex;
+      gap: 10px;
+      width: auto;
     }
   }
 }
