@@ -15,8 +15,9 @@ import { provideFirestore, getFirestore } from "@angular/fire/firestore";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
 
+import { NavbarComponent } from "./navbar/navbar.component";
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
