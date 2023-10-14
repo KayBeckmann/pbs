@@ -14,6 +14,47 @@ mat-toolbar-row {
 }
 
 .sidenav {
-  padding: 20px;
   background-color: var(--bg-color-second);
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+
+  .img-container {
+    margin-top: 10px;
+    width: 100%;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  ul {
+    list-style: none;
+    width: 100%;
+    margin-top: 25px;
+    padding: 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      width: 100%;
+      cursor: pointer;
+      font-size: clamp(1rem, 0.933rem + 0.36vw, 1.2rem);
+
+      &:hover {
+        background-color: purple;
+      }
+    }
+  }
 }

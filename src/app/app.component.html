@@ -6,17 +6,36 @@
   "
 ></div>
 
+<!-- View with Navbar in App -->
 <ng-template #template1>
-  <mat-drawer-container *ngIf="router.url != '/'" class="container" autosize>
+  <mat-drawer-container class="container" autosize>
     <mat-drawer #drawer class="sidenav" mode="side">
-      <p>Auto-resizing sidenav</p>
-      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
-      <button (click)="showFiller = !showFiller" mat-raised-button>
-        Toggle extra text
-      </button>
+      <!-- Sidenav Menu -->
+      <div class="img-container">
+        <img src="./assets/icons/icon-128x128.png" alt="" />
+      </div>
+
+      <ul>
+        <li routerLink="dashboard">
+          <mat-icon>dashboard</mat-icon>
+          Dashboard
+        </li>
+        <li>
+          <mat-icon>account_balance</mat-icon>
+          Accounts
+        </li>
+        <li routerLink="user">
+          <mat-icon>settings</mat-icon>
+          User Settings
+        </li>
+      </ul>
+      <ul class="bottom">
+        <li><mat-icon>policy</mat-icon>Legacy</li>
+      </ul>
     </mat-drawer>
 
     <div class="sidenav-content">
+      <!-- Toolbar -->
       <mat-toolbar color="primary">
         <mat-toolbar-row>
           <div class="pointer">
@@ -25,11 +44,13 @@
           <div>PBS</div>
         </mat-toolbar-row>
       </mat-toolbar>
+      <!-- CONTENT -->
       <router-outlet></router-outlet>
     </div>
   </mat-drawer-container>
 </ng-template>
 
+<!-- View without Navbar for LOGIN and SIGN-UP -->
 <ng-template #template2>
   <router-outlet></router-outlet>
 </ng-template>
