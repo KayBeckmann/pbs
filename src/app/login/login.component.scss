@@ -30,6 +30,7 @@ mat-form-field {
   justify-content: center;
   width: 100dvw;
   height: 100dvh;
+  background-color: var(--bg-color-main);
 }
 
 .card {
@@ -37,14 +38,6 @@ mat-form-field {
   width: 95%;
   background-color: var(--bg-color-second);
   border-radius: 10px;
-}
-
-.alert {
-  color: red;
-}
-
-.hide {
-  display: none;
 }
 
 .full-width {

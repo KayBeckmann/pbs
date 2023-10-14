@@ -2,15 +2,25 @@
 
 :root {
   --bg-color-main: rgba(63, 81, 181, 0.3);
-  --bg-color-second: rgba(63, 81, 181, 0.3);
+  --bg-color-second: #c5cae8;
+  --alert: red;
 }
 
-html,
-body {
+html {
   height: 100%;
 }
+
 body {
+  height: 100%;
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   background-color: var(--bg-color-main);
+}
+
+.d-none {
+  display: none;
+}
+
+.alert {
+  color: var(--alert);
 }
