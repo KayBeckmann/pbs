@@ -17,9 +17,19 @@ const routes: Routes = [
       import("./login/login.module").then((m) => m.LoginModule)
   },
   {
+    path: "legacy",
+    loadChildren: () =>
+      import("./legacy/legacy.module").then((m) => m.LegacyModule)
+  },
+  {
     path: "",
     loadChildren: () =>
       import("./login/login.module").then((m) => m.LoginModule)
+  },
+  {
+    path: "legacy",
+    loadChildren: () =>
+      import("./legacy/legacy.module").then((m) => m.LegacyModule)
   }
 ];
 
