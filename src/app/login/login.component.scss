@@ -30,12 +30,13 @@ mat-form-field {
   justify-content: center;
   width: 100dvw;
   height: 100dvh;
-  background-color: rgba(63, 81, 181, 0.3);
+  // background-color: rgba(63, 81, 181, 0.3);
 }
 
 .card {
   max-width: 400px;
   width: 95%;
+  background-color: var(--bg-color-second);
 }
 
 .alert {
