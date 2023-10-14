@@ -19,21 +19,14 @@ mat-form-field {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100dvw;
+  width: 100%;
   height: 100dvh;
-  background-color: rgba(63, 81, 181, 0.3);
+  background-color: var(--bg-color-main);
 }
 
 .card {
   max-width: 400px;
-}
-
-.alert {
-  color: red;
-}
-
-.hide {
-  display: none;
+  background-color: var(--bg-color-second);
 }
 
 .full-width {

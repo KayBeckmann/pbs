@@ -14,10 +14,10 @@ import { provideDatabase, getDatabase } from "@angular/fire/database";
 import { provideFirestore, getFirestore } from "@angular/fire/firestore";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatIconModule } from "@angular/material/icon";
+import { MatSidenavModule } from "@angular/material/sidenav";
 
-import { NavbarComponent } from "./navbar/navbar.component";
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -26,6 +26,7 @@ import { NavbarComponent } from "./navbar/navbar.component";
     MatCardModule,
     MatToolbarModule,
     MatIconModule,
+    MatSidenavModule,
     ServiceWorkerModule.register("ngsw-worker.js", {
       enabled: !isDevMode(),
       // Register the ServiceWorker as soon as the application is stable

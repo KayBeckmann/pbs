@@ -1,0 +1,19 @@
+mat-toolbar-row {
+  gap: 15px;
+}
+
+.container {
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.sidenav-content {
+  height: 100dvh;
+  width: 100%;
+  background-color: var(--bg-color-main);
+}
+
+.sidenav {
+  padding: 20px;
+  background-color: var(--bg-color-second);
+}

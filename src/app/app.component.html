@@ -1,2 +1,35 @@
-<div *ngIf="router.url != '/'"><app-navbar></app-navbar></div>
-<router-outlet></router-outlet>
+<div
+  *ngIf="
+    router.url != '/' && router.url != '/signup';
+    then template1;
+    else template2
+  "
+></div>
+
+<ng-template #template1>
+  <mat-drawer-container *ngIf="router.url != '/'" class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+      <p>Auto-resizing sidenav</p>
+      <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+      <button (click)="showFiller = !showFiller" mat-raised-button>
+        Toggle extra text
+      </button>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <div class="pointer">
+            <mat-icon (click)="drawer.toggle()">menu</mat-icon>
+          </div>
+          <div>PBS</div>
+        </mat-toolbar-row>
+      </mat-toolbar>
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-container>
+</ng-template>
+
+<ng-template #template2>
+  <router-outlet></router-outlet>
+</ng-template>
