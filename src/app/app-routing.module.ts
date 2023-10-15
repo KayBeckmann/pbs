@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () => import("./user/user.module").then((m) => m.UserModule)
   },
   {
+    path: "account",
+    loadChildren: () =>
+      import("./account/account.module").then((m) => m.AccountModule)
+  },
+  {
     path: "dashboard",
     loadChildren: () =>
       import("./dashboard/dashboard.module").then((m) => m.DashboardModule)
@@ -30,6 +35,11 @@ const routes: Routes = [
     path: "legacy",
     loadChildren: () =>
       import("./legacy/legacy.module").then((m) => m.LegacyModule)
+  },
+  {
+    path: "account",
+    loadChildren: () =>
+      import("./account/account.module").then((m) => m.AccountModule)
   }
 ];
 
